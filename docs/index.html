@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HarmSpec — Audio Examples</title>
+  <style>
+    :root {
+      --bg:#0f1115; --card:#1a1d24; --text:#e8eaed; --muted:#9aa0a6; --accent:#8ab4f8;
+    }
+    body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
+      margin: 0; line-height: 1.5; }
+    header { padding: 2rem 1.25rem 1rem; max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; margin: 0 0 .5rem; }
+  p.lead { color: var(--muted); max-width: 52rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+  section { margin-top: 2.5rem; }
+  h2 { font-size: 1.25rem; border-bottom: 1px solid #333; padding-bottom: .35rem; }
+  .clip { background: var(--card); border-radius: 10px; padding: 1rem; margin: 1rem 0; }
+  .clip h3 { margin: 0 0 .75rem; font-size: 1rem; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { padding: .4rem .35rem; text-align: left; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  audio { width: 100%; max-width: 220px; height: 32px; }
+  footer { max-width: 960px; margin: 2rem auto; padding: 1rem 1.25rem; color: var(--muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HarmSpec — Audio Examples</h1>
+    <p class="lead">Score-conditioned harmonic decoding with mixture-phase PRC Wiener masks.
+    Oracle MIDI at test time. Each clip is a 4&nbsp;s crop. Compare <strong>mix-only</strong>
+    training (<code>stem_weight=0</code>) vs <strong>stem-supervised</strong> training.</p>
+  </header>
+  <main id="app"></main>
+  <footer>
+    Slakh: gated SI-SDR (−40&nbsp;dBFS) on active frames. URMP: museval-style separation at 44.1&nbsp;kHz,
+    center 4&nbsp;s per held-out piece (IDs 17, 35, 36). Not for redistribution of Slakh/URMP audio beyond
+    research demos.
+  </footer>
+  <script>
+  const MANIFEST = {"descriptions": {"slakh11": "Validation crops (oracle MIDI). Main-table checkpoints: mixonly 2\u00d7GPU, stem (dc4) 4\u00d7GPU.", "slakh3": "Test crops on paper-3 piano/guitar/bass remix (same full-11 checkpoints as Table B).", "urmp": "Held-out pieces 17, 35, 36 \u2014 center 4 s at 44.1 kHz; URMP fine-tune from SynthSOD."}, "slakh11": [{"id": "Track01501_t0012", "title": "Track01501_t0012", "stems": [{"name": "Piano", "si_sdr_mixonly": 18.29, "si_sdr_stemsup": 17.28}, {"name": "Chromatic Percussion", "si_sdr_mixonly": -35.04, "si_sdr_stemsup": -37.76}, {"name": "Bass", "si_sdr_mixonly": 17.17, "si_sdr_stemsup": 17.22}, {"name": "Strings", "si_sdr_mixonly": -17.71, "si_sdr_stemsup": -19.19}, {"name": "Pipe", "si_sdr_mixonly": 1.74, "si_sdr_stemsup": 0.8}]}, {"id": "Track01502_t0004", "title": "Track01502_t0004", "stems": [{"name": "Piano", "si_sdr_mixonly": -1.63, "si_sdr_stemsup": -2.55}, {"name": "Guitar", "si_sdr_mixonly": -0.36, "si_sdr_stemsup": 1.24}, {"name": "Bass", "si_sdr_mixonly": -4.91, "si_sdr_stemsup": -4.1}, {"name": "Strings", "si_sdr_mixonly": -0.52, "si_sdr_stemsup": -0.89}, {"name": "Brass", "si_sdr_mixonly": 2.24, "si_sdr_stemsup": 2.27}]}, {"id": "Track01504_t0060", "title": "Track01504_t0060", "stems": [{"name": "Piano", "si_sdr_mixonly": -3.28, "si_sdr_stemsup": -3.79}, {"name": "Guitar", "si_sdr_mixonly": -0.02, "si_sdr_stemsup": 0.25}, {"name": "Bass", "si_sdr_mixonly": 0.59, "si_sdr_stemsup": 0.57}, {"name": "Strings", "si_sdr_mixonly": -1.86, "si_sdr_stemsup": -1.85}, {"name": "Reed", "si_sdr_mixonly": 6.4, "si_sdr_stemsup": 6.06}, {"name": "Synth Pad", "si_sdr_mixonly": -3.43, "si_sdr_stemsup": -0.57}]}], "slakh3": [{"id": "Track00074_t0000", "title": "Track00074_t0000", "stems": []}, {"id": "Track00074_t0004", "title": "Track00074_t0004", "stems": []}, {"id": "Track00074_t0008", "title": "Track00074_t0008", "stems": []}], "urmp": [{"id": "17_Nocturne_vn_fl_cl", "title": "17_Nocturne_vn_fl_cl", "sid": "17", "stems": [{"name": "Clarinet", "si_sdr_mixonly": 15.98, "si_sdr_stemsup": 16.79}, {"name": "Flute", "si_sdr_mixonly": 11.2, "si_sdr_stemsup": 12.0}, {"name": "Violin", "si_sdr_mixonly": 13.51, "si_sdr_stemsup": 14.54}]}, {"id": "35_Rondeau_vn_vn_va_db", "title": "35_Rondeau_vn_vn_va_db", "sid": "35", "stems": [{"name": "Bass", "si_sdr_mixonly": 2.08, "si_sdr_stemsup": 4.32}, {"name": "Viola", "si_sdr_mixonly": 8.03, "si_sdr_stemsup": 8.32}, {"name": "Violin", "si_sdr_mixonly": 7.39, "si_sdr_stemsup": 9.0}]}, {"id": "36_Rondeau_vn_vn_va_vc", "title": "36_Rondeau_vn_vn_va_vc", "sid": "36", "stems": [{"name": "Cello", "si_sdr_mixonly": 6.31, "si_sdr_stemsup": 7.53}, {"name": "Viola", "si_sdr_mixonly": -0.06, "si_sdr_stemsup": 1.81}, {"name": "Violin", "si_sdr_mixonly": 7.14, "si_sdr_stemsup": 8.08}]}]};
+  function stemRow(base, stem) {
+    const esc = (s) => s.replace(/\W+/g, '_');
+    const s = esc(stem.name);
+    return `<tr>
+      <td>${stem.name}<br><span style="color:#9aa0a6">mixonly ${stem.si_sdr_mixonly} dB · stem sup ${stem.si_sdr_stemsup} dB</span></td>
+      <td><audio controls preload="none" src="${base}/${s}_gt.wav"></audio></td>
+      <td><audio controls preload="none" src="${base}/${s}_mixonly.wav"></audio></td>
+      <td><audio controls preload="none" src="${base}/${s}_stemsup.wav"></audio></td>
+    </tr>`;
+  }
+  function section(title, desc, clips, audioPrefix) {
+    let h = `<section><h2>${title}</h2><p style="color:#9aa0a6">${desc}</p>`;
+    for (const c of clips) {
+      const base = `audio/${audioPrefix}/${c.id}`;
+      h += `<div class="clip"><h3>${c.title}</h3>
+        <p><strong>Mixture</strong> <audio controls preload="none" src="${base}/mix.wav"></audio></p>
+        <table><thead><tr><th>Stem</th><th>Ground truth</th><th>HarmSpec (mix-only)</th><th>HarmSpec (stem-sup.)</th></tr></thead><tbody>`;
+      for (const st of c.stems) h += stemRow(base, st);
+      h += `</tbody></table></div>`;
+    }
+    return h + `</section>`;
+  }
+  const app = document.getElementById('app');
+  app.innerHTML =
+    section('Slakh2100 — 11 GM classes', MANIFEST.descriptions.slakh11, MANIFEST.slakh11, 'slakh11') +
+    section('Slakh2100 — Piano / Guitar / Bass (paper-3 mix)', MANIFEST.descriptions.slakh3, MANIFEST.slakh3, 'slakh3') +
+    section('URMP — real chamber recordings (test split)', MANIFEST.descriptions.urmp, MANIFEST.urmp, 'urmp');
+  </script>
+</body>
+</html>

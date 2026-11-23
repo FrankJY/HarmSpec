@@ -1,0 +1,192 @@
+{
+  "descriptions": {
+    "slakh11": "Validation crops (oracle MIDI). Main-table checkpoints: mixonly 2\u00d7GPU, stem (dc4) 4\u00d7GPU.",
+    "slakh3": "Test crops on paper-3 piano/guitar/bass remix (same full-11 checkpoints as Table B).",
+    "urmp": "Held-out pieces 17, 35, 36 \u2014 center 4 s at 44.1 kHz; URMP fine-tune from SynthSOD."
+  },
+  "slakh11": [
+    {
+      "id": "Track01501_t0012",
+      "title": "Track01501_t0012",
+      "stems": [
+        {
+          "name": "Piano",
+          "si_sdr_mixonly": 18.29,
+          "si_sdr_stemsup": 17.28
+        },
+        {
+          "name": "Chromatic Percussion",
+          "si_sdr_mixonly": -35.04,
+          "si_sdr_stemsup": -37.76
+        },
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": 17.17,
+          "si_sdr_stemsup": 17.22
+        },
+        {
+          "name": "Strings",
+          "si_sdr_mixonly": -17.71,
+          "si_sdr_stemsup": -19.19
+        },
+        {
+          "name": "Pipe",
+          "si_sdr_mixonly": 1.74,
+          "si_sdr_stemsup": 0.8
+        }
+      ]
+    },
+    {
+      "id": "Track01502_t0004",
+      "title": "Track01502_t0004",
+      "stems": [
+        {
+          "name": "Piano",
+          "si_sdr_mixonly": -1.63,
+          "si_sdr_stemsup": -2.55
+        },
+        {
+          "name": "Guitar",
+          "si_sdr_mixonly": -0.36,
+          "si_sdr_stemsup": 1.24
+        },
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": -4.91,
+          "si_sdr_stemsup": -4.1
+        },
+        {
+          "name": "Strings",
+          "si_sdr_mixonly": -0.52,
+          "si_sdr_stemsup": -0.89
+        },
+        {
+          "name": "Brass",
+          "si_sdr_mixonly": 2.24,
+          "si_sdr_stemsup": 2.27
+        }
+      ]
+    },
+    {
+      "id": "Track01504_t0060",
+      "title": "Track01504_t0060",
+      "stems": [
+        {
+          "name": "Piano",
+          "si_sdr_mixonly": -3.28,
+          "si_sdr_stemsup": -3.79
+        },
+        {
+          "name": "Guitar",
+          "si_sdr_mixonly": -0.02,
+          "si_sdr_stemsup": 0.25
+        },
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": 0.59,
+          "si_sdr_stemsup": 0.57
+        },
+        {
+          "name": "Strings",
+          "si_sdr_mixonly": -1.86,
+          "si_sdr_stemsup": -1.85
+        },
+        {
+          "name": "Reed",
+          "si_sdr_mixonly": 6.4,
+          "si_sdr_stemsup": 6.06
+        },
+        {
+          "name": "Synth Pad",
+          "si_sdr_mixonly": -3.43,
+          "si_sdr_stemsup": -0.57
+        }
+      ]
+    }
+  ],
+  "slakh3": [
+    {
+      "id": "Track00074_t0000",
+      "title": "Track00074_t0000",
+      "stems": []
+    },
+    {
+      "id": "Track00074_t0004",
+      "title": "Track00074_t0004",
+      "stems": []
+    },
+    {
+      "id": "Track00074_t0008",
+      "title": "Track00074_t0008",
+      "stems": []
+    }
+  ],
+  "urmp": [
+    {
+      "id": "17_Nocturne_vn_fl_cl",
+      "title": "17_Nocturne_vn_fl_cl",
+      "sid": "17",
+      "stems": [
+        {
+          "name": "Clarinet",
+          "si_sdr_mixonly": 15.98,
+          "si_sdr_stemsup": 16.79
+        },
+        {
+          "name": "Flute",
+          "si_sdr_mixonly": 11.2,
+          "si_sdr_stemsup": 12.0
+        },
+        {
+          "name": "Violin",
+          "si_sdr_mixonly": 13.51,
+          "si_sdr_stemsup": 14.54
+        }
+      ]
+    },
+    {
+      "id": "35_Rondeau_vn_vn_va_db",
+      "title": "35_Rondeau_vn_vn_va_db",
+      "sid": "35",
+      "stems": [
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": 2.08,
+          "si_sdr_stemsup": 4.32
+        },
+        {
+          "name": "Viola",
+          "si_sdr_mixonly": 8.03,
+          "si_sdr_stemsup": 8.32
+        },
+        {
+          "name": "Violin",
+          "si_sdr_mixonly": 7.39,
+          "si_sdr_stemsup": 9.0
+        }
+      ]
+    },
+    {
+      "id": "36_Rondeau_vn_vn_va_vc",
+      "title": "36_Rondeau_vn_vn_va_vc",
+      "sid": "36",
+      "stems": [
+        {
+          "name": "Cello",
+          "si_sdr_mixonly": 6.31,
+          "si_sdr_stemsup": 7.53
+        },
+        {
+          "name": "Viola",
+          "si_sdr_mixonly": -0.06,
+          "si_sdr_stemsup": 1.81
+        },
+        {
+          "name": "Violin",
+          "si_sdr_mixonly": 7.14,
+          "si_sdr_stemsup": 8.08
+        }
+      ]
+    }
+  ]
+}
