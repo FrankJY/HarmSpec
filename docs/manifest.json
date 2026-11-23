@@ -11,28 +11,28 @@
       "stems": [
         {
           "name": "Piano",
-          "si_sdr_mixonly": 18.29,
-          "si_sdr_stemsup": 17.28
+          "si_sdr_mixonly": 18.18,
+          "si_sdr_stemsup": 17.29
         },
         {
           "name": "Chromatic Percussion",
-          "si_sdr_mixonly": -35.04,
-          "si_sdr_stemsup": -37.76
+          "si_sdr_mixonly": -35.5,
+          "si_sdr_stemsup": -39.74
         },
         {
           "name": "Bass",
-          "si_sdr_mixonly": 17.17,
-          "si_sdr_stemsup": 17.22
+          "si_sdr_mixonly": 17.1,
+          "si_sdr_stemsup": 17.23
         },
         {
           "name": "Strings",
-          "si_sdr_mixonly": -17.71,
-          "si_sdr_stemsup": -19.19
+          "si_sdr_mixonly": -17.3,
+          "si_sdr_stemsup": -19.08
         },
         {
           "name": "Pipe",
-          "si_sdr_mixonly": 1.74,
-          "si_sdr_stemsup": 0.8
+          "si_sdr_mixonly": 1.48,
+          "si_sdr_stemsup": 0.57
         }
       ]
     },
@@ -43,27 +43,27 @@
         {
           "name": "Piano",
           "si_sdr_mixonly": -1.63,
-          "si_sdr_stemsup": -2.55
+          "si_sdr_stemsup": -2.56
         },
         {
           "name": "Guitar",
-          "si_sdr_mixonly": -0.36,
-          "si_sdr_stemsup": 1.24
+          "si_sdr_mixonly": -0.37,
+          "si_sdr_stemsup": 1.28
         },
         {
           "name": "Bass",
-          "si_sdr_mixonly": -4.91,
-          "si_sdr_stemsup": -4.1
+          "si_sdr_mixonly": -4.9,
+          "si_sdr_stemsup": -4.11
         },
         {
           "name": "Strings",
-          "si_sdr_mixonly": -0.52,
-          "si_sdr_stemsup": -0.89
+          "si_sdr_mixonly": -0.51,
+          "si_sdr_stemsup": -0.88
         },
         {
           "name": "Brass",
-          "si_sdr_mixonly": 2.24,
-          "si_sdr_stemsup": 2.27
+          "si_sdr_mixonly": 2.26,
+          "si_sdr_stemsup": 2.31
         }
       ]
     },
@@ -73,52 +73,85 @@
       "stems": [
         {
           "name": "Piano",
-          "si_sdr_mixonly": -3.28,
-          "si_sdr_stemsup": -3.79
+          "si_sdr_mixonly": -3.35,
+          "si_sdr_stemsup": -3.7
         },
         {
           "name": "Guitar",
-          "si_sdr_mixonly": -0.02,
-          "si_sdr_stemsup": 0.25
+          "si_sdr_mixonly": -0.05,
+          "si_sdr_stemsup": 0.31
         },
         {
           "name": "Bass",
-          "si_sdr_mixonly": 0.59,
-          "si_sdr_stemsup": 0.57
+          "si_sdr_mixonly": 0.56,
+          "si_sdr_stemsup": 0.6
         },
         {
           "name": "Strings",
-          "si_sdr_mixonly": -1.86,
-          "si_sdr_stemsup": -1.85
+          "si_sdr_mixonly": -1.82,
+          "si_sdr_stemsup": -2.0
         },
         {
           "name": "Reed",
-          "si_sdr_mixonly": 6.4,
-          "si_sdr_stemsup": 6.06
+          "si_sdr_mixonly": 6.28,
+          "si_sdr_stemsup": 5.94
         },
         {
           "name": "Synth Pad",
-          "si_sdr_mixonly": -3.43,
-          "si_sdr_stemsup": -0.57
+          "si_sdr_mixonly": -3.57,
+          "si_sdr_stemsup": -0.64
         }
       ]
     }
   ],
   "slakh3": [
     {
-      "id": "Track00074_t0000",
-      "title": "Track00074_t0000",
-      "stems": []
+      "id": "Track00074_t0040",
+      "title": "Track00074_t0040",
+      "stems": [
+        {
+          "name": "Piano",
+          "si_sdr_mixonly": 7.93,
+          "si_sdr_stemsup": -3.14
+        },
+        {
+          "name": "Guitar",
+          "si_sdr_mixonly": -4.45,
+          "si_sdr_stemsup": -5.7
+        },
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": 15.76,
+          "si_sdr_stemsup": 4.02
+        }
+      ]
     },
     {
-      "id": "Track00074_t0004",
-      "title": "Track00074_t0004",
-      "stems": []
+      "id": "Track00074_t0036",
+      "title": "Track00074_t0036",
+      "stems": [
+        {
+          "name": "Bass",
+          "si_sdr_mixonly": 31.62,
+          "si_sdr_stemsup": 24.78
+        }
+      ]
     },
     {
-      "id": "Track00074_t0008",
-      "title": "Track00074_t0008",
-      "stems": []
+      "id": "Track00074_t0044",
+      "title": "Track00074_t0044",
+      "stems": [
+        {
+          "name": "Piano",
+          "si_sdr_mixonly": 12.38,
+          "si_sdr_stemsup": 11.11
+        },
+        {
+          "name": "Guitar",
+          "si_sdr_mixonly": -4.76,
+          "si_sdr_stemsup": -5.03
+        }
+      ]
     }
   ],
   "urmp": [
@@ -129,18 +162,18 @@
       "stems": [
         {
           "name": "Clarinet",
-          "si_sdr_mixonly": 15.98,
+          "si_sdr_mixonly": 15.97,
           "si_sdr_stemsup": 16.79
         },
         {
           "name": "Flute",
           "si_sdr_mixonly": 11.2,
-          "si_sdr_stemsup": 12.0
+          "si_sdr_stemsup": 11.92
         },
         {
           "name": "Violin",
-          "si_sdr_mixonly": 13.51,
-          "si_sdr_stemsup": 14.54
+          "si_sdr_mixonly": 13.52,
+          "si_sdr_stemsup": 14.51
         }
       ]
     },
@@ -151,17 +184,17 @@
       "stems": [
         {
           "name": "Bass",
-          "si_sdr_mixonly": 2.08,
-          "si_sdr_stemsup": 4.32
+          "si_sdr_mixonly": 2.04,
+          "si_sdr_stemsup": 4.22
         },
         {
           "name": "Viola",
-          "si_sdr_mixonly": 8.03,
-          "si_sdr_stemsup": 8.32
+          "si_sdr_mixonly": 8.07,
+          "si_sdr_stemsup": 8.15
         },
         {
           "name": "Violin",
-          "si_sdr_mixonly": 7.39,
+          "si_sdr_mixonly": 7.33,
           "si_sdr_stemsup": 9.0
         }
       ]
@@ -173,18 +206,18 @@
       "stems": [
         {
           "name": "Cello",
-          "si_sdr_mixonly": 6.31,
-          "si_sdr_stemsup": 7.53
+          "si_sdr_mixonly": 6.3,
+          "si_sdr_stemsup": 7.47
         },
         {
           "name": "Viola",
-          "si_sdr_mixonly": -0.06,
-          "si_sdr_stemsup": 1.81
+          "si_sdr_mixonly": -0.14,
+          "si_sdr_stemsup": 1.74
         },
         {
           "name": "Violin",
-          "si_sdr_mixonly": 7.14,
-          "si_sdr_stemsup": 8.08
+          "si_sdr_mixonly": 7.21,
+          "si_sdr_stemsup": 8.06
         }
       ]
     }
